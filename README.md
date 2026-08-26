@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Landing Page Prodi Teknik Informatika UMC
 
-## Getting Started
+Landing page statis untuk Program Studi S1 Teknik Informatika, Universitas Muhammadiyah Cirebon (UMC).
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Konsep Desain
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Gaya Visual**: Clean, modern, dan profesional dengan whitespace yang luas agar nyaman dilihat.
+- **Warna Branding**:
+  - Primary Red: `#DF1A22`
+  - Yellow: `#F2A900`
+  - Green: `#00853F`
+  - Black & White: `#111111` & `#FFFFFF`
+- **Tipografi**:
+  - Heading: Sora
+  - Body: Plus Jakarta Sans
+- **Struktur Komponen**: Menggunakan pola Atomic Design (`atoms/`, `molecules/`, `organisms/`).
+- **Fitur Utama**:
+  - Preloader splash screen dengan progress bar.
+  - Sticky navbar dengan efek glassmorphism saat di-scroll.
+  - Hero section dengan kolase foto Gedung UMC & running text marquee.
+  - Counter statistik interaktif saat di-scroll.
+  - Accordion FAQ.
+  - Galeri kegiatan mahasiswa & fasilitas kampus.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Teknologi
 
-## Learn More
+- **Framework**: Next.js 16 (App Router)
+- **Library**: React 19
+- **Bahasa**: TypeScript 5
+- **Styling**: Tailwind CSS v4
+- **Font Engine**: `next/font/google` (Sora & Plus Jakarta Sans)
+- **Animasi**: CSS Transitions + IntersectionObserver API (tanpa library animasi tambahan)
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Cara Menginstal dan Menjalankan
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Prasyarat
+- Node.js versi `20.x` atau lebih baru
+- npm
 
-## Deploy on Vercel
+### Langkah-langkah
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. **Install Dependensi**
+   ```bash
+   npm install
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+2. **Build Proyek**
+   ```bash
+   npm run build
+   ```
+
+3. **Jalankan Website (Production Mode)**
+   ```bash
+   npm run start
+   ```
+
+Buka `http://localhost:3000` di browser.
+
+> **Note**: Untuk menjalankan mode pengembang (development), gunakan perintah `npm run dev`.
+
+---
+
+## Referensi Desain
+
+- [Scholaro - University Landing Page](https://dribbble.com/shots/27300446-Scholaro-University-Landing-Page)
