@@ -74,8 +74,9 @@ body {
 
 .animate-on-scroll {
   opacity: 0;
-  transform: translateY(32px);
-  transition: opacity 600ms ease-out, transform 600ms ease-out;
+  transform: translateY(18px);
+  transition: opacity 380ms cubic-bezier(0.16, 1, 0.3, 1), transform 380ms cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
 }
 
 .animate-on-scroll.is-visible {
@@ -85,8 +86,9 @@ body {
 
 .animate-on-scroll-left {
   opacity: 0;
-  transform: translateX(-32px);
-  transition: opacity 600ms ease-out, transform 600ms ease-out;
+  transform: translateX(-18px);
+  transition: opacity 380ms cubic-bezier(0.16, 1, 0.3, 1), transform 380ms cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
 }
 
 .animate-on-scroll-left.is-visible {
@@ -96,8 +98,9 @@ body {
 
 .animate-on-scroll-right {
   opacity: 0;
-  transform: translateX(32px);
-  transition: opacity 600ms ease-out, transform 600ms ease-out;
+  transform: translateX(18px);
+  transition: opacity 380ms cubic-bezier(0.16, 1, 0.3, 1), transform 380ms cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
 }
 
 .animate-on-scroll-right.is-visible {
@@ -105,13 +108,13 @@ body {
   transform: translateX(0);
 }
 
-/* Stagger delays for children */
-.stagger-1 { transition-delay: 100ms; }
-.stagger-2 { transition-delay: 200ms; }
-.stagger-3 { transition-delay: 300ms; }
-.stagger-4 { transition-delay: 400ms; }
-.stagger-5 { transition-delay: 500ms; }
-.stagger-6 { transition-delay: 600ms; }
+/* Stagger delays for children (faster cascade) */
+.stagger-1 { transition-delay: 40ms; }
+.stagger-2 { transition-delay: 80ms; }
+.stagger-3 { transition-delay: 120ms; }
+.stagger-4 { transition-delay: 160ms; }
+.stagger-5 { transition-delay: 200ms; }
+.stagger-6 { transition-delay: 240ms; }
 
 /* ===================================================
    Glassmorphism Navbar

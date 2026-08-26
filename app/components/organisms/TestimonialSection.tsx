@@ -10,7 +10,7 @@ export default function TestimonialSection() {
   const sectionRef = useScrollAnimation();
 
   return (
-    <section className="py-24 md:py-32 lg:py-40 bg-white">
+    <section className="py-16 md:py-20 lg:py-24 bg-white">
       <div
         ref={sectionRef}
         className="max-w-[1280px] mx-auto px-6 md:px-8 xl:px-16"

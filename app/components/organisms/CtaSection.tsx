@@ -6,7 +6,7 @@ export default function CtaSection() {
   return (
     <section
       id="cta"
-      className="py-24 md:py-32 relative overflow-hidden bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-primary-dark)]"
+      className="py-16 md:py-20 relative overflow-hidden bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-primary-dark)]"
     >
       {/* Decorative elements */}
       <div className="absolute top-0 right-0 w-80 h-80 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/3" />
