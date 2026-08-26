@@ -6,7 +6,7 @@ import { useEffect, useRef } from 'react';
  * Custom hook for scroll-triggered animations using IntersectionObserver.
  * Adds 'is-visible' class to elements with animation CSS classes when they enter viewport.
  */
-export function useScrollAnimation(threshold: number = 0.05) {
+export function useScrollAnimation(threshold: number = 0.10) {
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {

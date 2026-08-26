@@ -11,7 +11,7 @@ export default function VisionMission() {
   return (
     <section
       id="visi-misi"
-      className="py-24 md:py-32 lg:py-40 bg-[var(--color-gray-50)]"
+      className="py-16 md:py-20 lg:py-24 bg-[var(--color-gray-50)]"
     >
       <div
         ref={sectionRef}

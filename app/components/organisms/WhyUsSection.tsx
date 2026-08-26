@@ -13,7 +13,7 @@ export default function WhyUsSection() {
   return (
     <section
       id="keunggulan"
-      className="py-24 md:py-32 lg:py-40 bg-white"
+      className="py-16 md:py-20 lg:py-24 bg-white"
     >
       <div
         ref={sectionRef}
