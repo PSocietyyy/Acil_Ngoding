@@ -1,12 +1,10 @@
 # Landing Page Prodi Teknik Informatika UMC
 
-Landing page statis untuk Program Studi S1 Teknik Informatika, Universitas Muhammadiyah Cirebon (UMC).
-
 ---
 
 ## Konsep Desain
 
-- **Gaya Visual**: Clean, modern, dan profesional dengan whitespace yang luas agar nyaman dilihat.
+- **Gaya Visual**: Clean, modern, dan whitespace yang dibikin luas agar nyaman dilihat.
 - **Warna Branding**:
   - Primary Red: `#DF1A22`
   - Yellow: `#F2A900`
@@ -65,3 +63,4 @@ Buka `http://localhost:3000` di browser.
 ## Referensi Desain
 
 - [Scholaro - University Landing Page](https://dribbble.com/shots/27300446-Scholaro-University-Landing-Page)
+- [Enlango - English Learning Landing Page](https://dribbble.com/shots/26771349-Enlango-English-Learning-Hero-Section?utm_source=Clipboard_Shot&utm_campaign=eluxspace&utm_content=Enlango%20-%20English%20Learning%20Hero%20Section&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=eluxspace&utm_content=Enlango%20-%20English%20Learning%20Hero%20Section&utm_medium=Social_Share)
