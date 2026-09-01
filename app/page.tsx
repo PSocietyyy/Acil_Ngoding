@@ -1,4 +1,5 @@
 import Preloader from '@/app/components/molecules/Preloader';
+import BackToTop from '@/app/components/molecules/BackToTop';
 import Navbar from '@/app/components/organisms/Navbar';
 import HeroSection from '@/app/components/organisms/HeroSection';
 import AboutSection from '@/app/components/organisms/AboutSection';
@@ -30,6 +31,7 @@ export default function Home() {
         <CtaSection />
       </main>
       <Footer />
+      <BackToTop />
     </>
   );
 }

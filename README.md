@@ -19,8 +19,6 @@ Landing page statis untuk Program Studi S1 Teknik Informatika, Universitas Muham
 - **Fitur Utama**:
   - Preloader splash screen dengan progress bar.
   - Sticky navbar dengan efek glassmorphism saat di-scroll.
-  - Hero section dengan kolase foto Gedung UMC & running text marquee.
-  - Counter statistik interaktif saat di-scroll.
   - Accordion FAQ.
   - Galeri kegiatan mahasiswa & fasilitas kampus.
 
@@ -33,8 +31,6 @@ Landing page statis untuk Program Studi S1 Teknik Informatika, Universitas Muham
 - **Bahasa**: TypeScript 5
 - **Styling**: Tailwind CSS v4
 - **Font Engine**: `next/font/google` (Sora & Plus Jakarta Sans)
-- **Animasi**: CSS Transitions + IntersectionObserver API (tanpa library animasi tambahan)
-
 ---
 
 ## Cara Menginstal dan Menjalankan
@@ -55,7 +51,7 @@ Landing page statis untuk Program Studi S1 Teknik Informatika, Universitas Muham
    npm run build
    ```
 
-3. **Jalankan Website (Production Mode)**
+3. **Jalankan Website**
    ```bash
    npm run start
    ```

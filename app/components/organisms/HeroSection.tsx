@@ -52,10 +52,7 @@ export default function HeroSection() {
               {/* Tag pill */}
               <div className="hero-tag self-start mb-5 sm:mb-8">
                 <span className="inline-flex items-center gap-2 px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-full bg-white/[0.07] border border-white/10 text-white/80 text-[11px] sm:text-xs font-semibold tracking-[0.1em] uppercase backdrop-blur-sm">
-                  <span className="relative flex h-2 w-2">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[var(--color-green)] opacity-75" />
-                    <span className="relative inline-flex rounded-full h-2 w-2 bg-[var(--color-green)]" />
-                  </span>
+
                   PMB 2026 Dibuka
                 </span>
               </div>
@@ -171,8 +168,8 @@ export default function HeroSection() {
               <div className="grid grid-cols-3 gap-3 sm:gap-6 pt-4 border-t border-white/10">
                 {[
                   { value: '1.200+', label: 'Mahasiswa Aktif' },
-                  { value: '95%',    label: 'Tingkat Lulus' },
-                  { value: '50+',    label: 'Mitra Industri' },
+                  { value: '95%', label: 'Tingkat Lulus' },
+                  { value: '50+', label: 'Mitra Industri' },
                 ].map((s, i) => (
                   <div key={s.value} className={`hero-chip-${i + 1}`}>
                     <p className="font-[family-name:var(--font-sora)] text-lg sm:text-2xl font-extrabold text-white">
@@ -231,18 +228,6 @@ export default function HeroSection() {
                   Gedung Utama Kampus UMC
                 </div>
 
-                {/* ── Floating chip inside photo — top right ── */}
-                <div className="hero-chip-1 absolute top-4 right-4 z-20 flex items-center gap-2.5 bg-white/95 backdrop-blur-md rounded-2xl px-4 py-2.5 shadow-xl">
-                  <div className="w-8 h-8 rounded-xl bg-[var(--color-green)]/15 flex items-center justify-center">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-green)" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                      <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
-                    </svg>
-                  </div>
-                  <div>
-                    <p className="font-[family-name:var(--font-sora)] text-base font-extrabold text-[var(--color-black)]">95%</p>
-                    <p className="text-[10px] text-[var(--color-gray-600)] leading-tight">Tingkat Kelulusan</p>
-                  </div>
-                </div>
 
                 {/* ── Floating chip inside photo — bottom right ── */}
                 <div className="hero-chip-2 absolute bottom-4 right-4 z-20 flex items-center gap-2.5 bg-[var(--color-yellow)] rounded-2xl px-4 py-2.5 shadow-xl">
@@ -280,42 +265,7 @@ export default function HeroSection() {
         </div>
       </div>
 
-      {/* ═══════════════════════════════════════
-          MARQUEE TICKER (bottom)
-      ═══════════════════════════════════════ */}
-      <div className="relative z-10 border-t border-white/[0.07] py-3.5 overflow-hidden">
-        {/* Left / right fade masks */}
-        <div
-          className="absolute left-0 top-0 bottom-0 w-16 sm:w-24 z-10 pointer-events-none"
-          style={{ background: 'linear-gradient(to right, var(--color-black), transparent)' }}
-        />
-        <div
-          className="absolute right-0 top-0 bottom-0 w-16 sm:w-24 z-10 pointer-events-none"
-          style={{ background: 'linear-gradient(to left, var(--color-black), transparent)' }}
-        />
 
-        <div className="animate-marquee">
-          {allItems.map((item, i) => (
-            <span
-              key={`${item}-${i}`}
-              className="inline-flex items-center gap-3 sm:gap-4 px-4 sm:px-6 whitespace-nowrap text-[11px] sm:text-xs font-semibold tracking-[0.15em] uppercase text-white/30"
-            >
-              {item}
-              <span
-                className="inline-block w-1.5 h-1.5 rounded-full shrink-0"
-                style={{
-                  background:
-                    i % 3 === 0
-                      ? 'var(--color-primary)'
-                      : i % 3 === 1
-                        ? 'var(--color-yellow)'
-                        : 'var(--color-green)',
-                }}
-              />
-            </span>
-          ))}
-        </div>
-      </div>
     </section>
   );
 }

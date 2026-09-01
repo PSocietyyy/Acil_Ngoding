@@ -29,7 +29,6 @@ export default function ProgramCard({
         <div className="flex items-center justify-center w-14 h-14 rounded-xl bg-[var(--color-primary)]/8 text-[var(--color-primary)]">
           <Icon name={iconName} size={28} />
         </div>
-        <Badge label={badge} variant={badgeVariant} />
       </div>
 
       <h3 className="font-[family-name:var(--font-sora)] text-xl font-semibold text-[var(--color-black)] mb-3">
